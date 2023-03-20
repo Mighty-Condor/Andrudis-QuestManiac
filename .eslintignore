@@ -1,0 +1,11 @@
+# Exclude these folders from linting
+node_modules
+dist/
+types/
+original_code/
+types_aqm/
+
+# Exclude these filetypes from linting
+*.json
+*.txt
+*.exe

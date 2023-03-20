@@ -1,0 +1,899 @@
+{
+    "Survivalist_2_any_true": {
+        "_id": "Survivalist_2_any_true",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "dynamicLocale": false,
+                        "id": "Survivalist_2_any_true_Min_Level_6",
+                        "index": 6,
+                        "parentId": "",
+                        "value": "5",
+                        "visibilityConditions": []
+                    }
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "Survivalist_2_any_true_completion_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "Survivalist_2_any_true_completion_0_subcondition_0"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "Survivalist_2_any_true_completion_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Completion",
+                        "value": "10",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "Survivalist_2_any_true description",
+        "failMessageText": "Survivalist_2_any_true failMessageText",
+        "image": "/files/quest/icon/5d6946c486f77452a8292cb2.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "any",
+        "name": "Survivalist_2_any_true name",
+        "note": "Survivalist_2_any_true note",
+        "restartable": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "2500",
+                    "id": "Survivalist_2_any_true_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "Survivalist_2_any_true_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "25000",
+                    "id": "Survivalist_2_any_true_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "Survivalist_2_any_true_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 25000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "Survivalist_2_any_true startedMessageText",
+        "successMessageText": "Survivalist_2_any_true successMessageText",
+        "templateId": "Survivalist_2_any_true",
+        "traderId": "579dc571d53a0658a154fbec",
+        "type": "PickUp",
+        "QuestName": "[Fen] Survivalist: Tarkov x10",
+        "acceptPlayerMessage": "Survivalist_2_any_true acceptPlayerMessage",
+        "changeQuestMessageText": "Survivalist_2_any_true changeQuestMessageText",
+        "completePlayerMessage": "Survivalist_2_any_true completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "Survivalist_4_any_true": {
+        "_id": "Survivalist_4_any_true",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "dynamicLocale": false,
+                        "id": "Survivalist_4_any_true_Min_Level_6",
+                        "index": 6,
+                        "parentId": "",
+                        "value": "5",
+                        "visibilityConditions": []
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_4_any_true_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_2_56f40101d2720b2a4d8b45d6_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_4_any_true_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_2_5714dbc024597771384a510d_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_4_any_true_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_2_5704e5fad2720bc05b8b4567_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_4_any_true_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_2_5704e554d2720bac5b8b456e_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_4_any_true_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_2_5704e3c2d2720bac5b8b4567_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_4_any_true_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_2_55f2d3fd4bdc2d5f408b4567_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_4_any_true_Parent_Quest_13",
+                        "index": 13,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_2_any_true"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "Survivalist_4_any_true_completion_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "Survivalist_4_any_true_completion_0_subcondition_0"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "Survivalist_4_any_true_completion_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Completion",
+                        "value": "20",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "Survivalist_4_any_true description",
+        "failMessageText": "Survivalist_4_any_true failMessageText",
+        "image": "/files/quest/icon/5d6946c486f77452a8292cb2.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "any",
+        "name": "Survivalist_4_any_true name",
+        "note": "Survivalist_4_any_true note",
+        "restartable": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "5000",
+                    "id": "Survivalist_4_any_true_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "Survivalist_4_any_true_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "50000",
+                    "id": "Survivalist_4_any_true_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "Survivalist_4_any_true_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 50000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "Survivalist_4_any_true startedMessageText",
+        "successMessageText": "Survivalist_4_any_true successMessageText",
+        "templateId": "Survivalist_4_any_true",
+        "traderId": "579dc571d53a0658a154fbec",
+        "type": "PickUp",
+        "QuestName": "[Fen] Survivalist: Tarkov x20",
+        "acceptPlayerMessage": "Survivalist_4_any_true acceptPlayerMessage",
+        "changeQuestMessageText": "Survivalist_4_any_true changeQuestMessageText",
+        "completePlayerMessage": "Survivalist_4_any_true completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "Survivalist_6_any_true": {
+        "_id": "Survivalist_6_any_true",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "dynamicLocale": false,
+                        "id": "Survivalist_6_any_true_Min_Level_6",
+                        "index": 6,
+                        "parentId": "",
+                        "value": "5",
+                        "visibilityConditions": []
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_6_any_true_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_56f40101d2720b2a4d8b45d6_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_6_any_true_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_5714dbc024597771384a510d_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_6_any_true_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_5704e5fad2720bc05b8b4567_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_6_any_true_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_5704e554d2720bac5b8b456e_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_6_any_true_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_5704e3c2d2720bac5b8b4567_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_6_any_true_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_55f2d3fd4bdc2d5f408b4567_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_6_any_true_Parent_Quest_13",
+                        "index": 13,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_4_any_true"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "Survivalist_6_any_true_completion_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "Survivalist_6_any_true_completion_0_subcondition_0"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "Survivalist_6_any_true_completion_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Completion",
+                        "value": "30",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "Survivalist_6_any_true description",
+        "failMessageText": "Survivalist_6_any_true failMessageText",
+        "image": "/files/quest/icon/5d6946c486f77452a8292cb2.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "any",
+        "name": "Survivalist_6_any_true name",
+        "note": "Survivalist_6_any_true note",
+        "restartable": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "7500",
+                    "id": "Survivalist_6_any_true_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "Survivalist_6_any_true_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "75000",
+                    "id": "Survivalist_6_any_true_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "Survivalist_6_any_true_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 75000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "Survivalist_6_any_true startedMessageText",
+        "successMessageText": "Survivalist_6_any_true successMessageText",
+        "templateId": "Survivalist_6_any_true",
+        "traderId": "579dc571d53a0658a154fbec",
+        "type": "PickUp",
+        "QuestName": "[Fen] Survivalist: Tarkov x30",
+        "acceptPlayerMessage": "Survivalist_6_any_true acceptPlayerMessage",
+        "changeQuestMessageText": "Survivalist_6_any_true changeQuestMessageText",
+        "completePlayerMessage": "Survivalist_6_any_true completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "Survivalist_8_any_true": {
+        "_id": "Survivalist_8_any_true",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "dynamicLocale": false,
+                        "id": "Survivalist_8_any_true_Min_Level_6",
+                        "index": 6,
+                        "parentId": "",
+                        "value": "5",
+                        "visibilityConditions": []
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_8_any_true_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_10_56f40101d2720b2a4d8b45d6_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_8_any_true_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_10_5714dbc024597771384a510d_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_8_any_true_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_10_5704e5fad2720bc05b8b4567_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_8_any_true_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_10_5704e554d2720bac5b8b456e_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_8_any_true_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_10_5704e3c2d2720bac5b8b4567_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_8_any_true_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_10_55f2d3fd4bdc2d5f408b4567_False"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_8_any_true_Parent_Quest_13",
+                        "index": 13,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_6_any_true"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "Survivalist_8_any_true_completion_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "Survivalist_8_any_true_completion_0_subcondition_0"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "Survivalist_8_any_true_completion_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Completion",
+                        "value": "40",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "Survivalist_8_any_true description",
+        "failMessageText": "Survivalist_8_any_true failMessageText",
+        "image": "/files/quest/icon/5d6946c486f77452a8292cb2.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "any",
+        "name": "Survivalist_8_any_true name",
+        "note": "Survivalist_8_any_true note",
+        "restartable": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "10000",
+                    "id": "Survivalist_8_any_true_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "Survivalist_8_any_true_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "100000",
+                    "id": "Survivalist_8_any_true_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "Survivalist_8_any_true_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 100000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "Survivalist_8_any_true startedMessageText",
+        "successMessageText": "Survivalist_8_any_true successMessageText",
+        "templateId": "Survivalist_8_any_true",
+        "traderId": "579dc571d53a0658a154fbec",
+        "type": "PickUp",
+        "QuestName": "[Fen] Survivalist: Tarkov x40",
+        "acceptPlayerMessage": "Survivalist_8_any_true acceptPlayerMessage",
+        "changeQuestMessageText": "Survivalist_8_any_true changeQuestMessageText",
+        "completePlayerMessage": "Survivalist_8_any_true completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "Survivalist_10_any_true": {
+        "_id": "Survivalist_10_any_true",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Level",
+                    "_props": {
+                        "compareMethod": ">=",
+                        "dynamicLocale": false,
+                        "id": "Survivalist_10_any_true_Min_Level_6",
+                        "index": 6,
+                        "parentId": "",
+                        "value": "5",
+                        "visibilityConditions": []
+                    }
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_10_any_true_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_56f40101d2720b2a4d8b45d6_True"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_10_any_true_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_5714dbc024597771384a510d_True"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_10_any_true_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_5704e5fad2720bc05b8b4567_True"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_10_any_true_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_5704e554d2720bac5b8b456e_True"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_10_any_true_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_5704e3c2d2720bac5b8b4567_True"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_10_any_true_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_5_55f2d3fd4bdc2d5f408b4567_True"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "Survivalist_10_any_true_Parent_Quest_13",
+                        "index": 13,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "Survivalist_8_any_true"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "Survivalist_10_any_true_completion_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "ExitStatus",
+                                    "_props": {
+                                        "status": [
+                                            "Survived"
+                                        ],
+                                        "id": "Survivalist_10_any_true_completion_0_subcondition_0"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "Survivalist_10_any_true_completion_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Completion",
+                        "value": "50",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "Survivalist_10_any_true description",
+        "failMessageText": "Survivalist_10_any_true failMessageText",
+        "image": "/files/quest/icon/5d6946c486f77452a8292cb2.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "any",
+        "name": "Survivalist_10_any_true name",
+        "note": "Survivalist_10_any_true note",
+        "restartable": true,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "12500",
+                    "id": "Survivalist_10_any_true_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "Survivalist_10_any_true_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "125000",
+                    "id": "Survivalist_10_any_true_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "Survivalist_10_any_true_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 125000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "Survivalist_10_any_true startedMessageText",
+        "successMessageText": "Survivalist_10_any_true successMessageText",
+        "templateId": "Survivalist_10_any_true",
+        "traderId": "579dc571d53a0658a154fbec",
+        "type": "PickUp",
+        "QuestName": "[Fen] Survivalist: Tarkov x50",
+        "acceptPlayerMessage": "Survivalist_10_any_true acceptPlayerMessage",
+        "changeQuestMessageText": "Survivalist_10_any_true changeQuestMessageText",
+        "completePlayerMessage": "Survivalist_10_any_true completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    }
+}

@@ -1,0 +1,1779 @@
+{
+    "PMC_Hunt_5704e4dad2720bb55b8b4567_1": {
+        "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_1",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_1_Elim_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "AnyPmc",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_1_Elim_0_subcondition_0"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Lighthouse"
+                                        ],
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_1_Elim_0_subcondition_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_1_Elim_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Elimination",
+                        "value": "1",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "PMC_Hunt_5704e4dad2720bb55b8b4567_1 description",
+        "failMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_1 failMessageText",
+        "image": "/files/quest/icon/5a27cafa86f77424e20615d6.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "5704e4dad2720bb55b8b4567",
+        "name": "PMC_Hunt_5704e4dad2720bb55b8b4567_1 name",
+        "note": "PMC_Hunt_5704e4dad2720bb55b8b4567_1 note",
+        "restartable": false,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "200",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_1_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_1_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "3000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_1_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_1_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 3000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_1 startedMessageText",
+        "successMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_1 successMessageText",
+        "templateId": "PMC_Hunt_5704e4dad2720bb55b8b4567_1",
+        "traderId": "Warden_Temporal_Id",
+        "type": "Elimination",
+        "QuestName": "[War] PMC Hunt: Clear Lighthouse from 1 PMC(s)",
+        "acceptPlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_1 acceptPlayerMessage",
+        "changeQuestMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_1 changeQuestMessageText",
+        "completePlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_1 completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "PMC_Hunt_5704e4dad2720bb55b8b4567_5": {
+        "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_5",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_5_Parent_Quest_6",
+                        "index": 6,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_1"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_5_Elim_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "AnyPmc",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_5_Elim_0_subcondition_0"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Lighthouse"
+                                        ],
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_5_Elim_0_subcondition_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_5_Elim_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Elimination",
+                        "value": "5",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "PMC_Hunt_5704e4dad2720bb55b8b4567_5 description",
+        "failMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_5 failMessageText",
+        "image": "/files/quest/icon/5a27cafa86f77424e20615d6.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "5704e4dad2720bb55b8b4567",
+        "name": "PMC_Hunt_5704e4dad2720bb55b8b4567_5 name",
+        "note": "PMC_Hunt_5704e4dad2720bb55b8b4567_5 note",
+        "restartable": false,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "1000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_5_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_5_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "15000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_5_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_5_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 15000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_5 startedMessageText",
+        "successMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_5 successMessageText",
+        "templateId": "PMC_Hunt_5704e4dad2720bb55b8b4567_5",
+        "traderId": "Warden_Temporal_Id",
+        "type": "Elimination",
+        "QuestName": "[War] PMC Hunt: Clear Lighthouse from 5 PMC(s)",
+        "acceptPlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_5 acceptPlayerMessage",
+        "changeQuestMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_5 changeQuestMessageText",
+        "completePlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_5 completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "PMC_Hunt_5704e4dad2720bb55b8b4567_10": {
+        "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Parent_Quest_6",
+                        "index": 6,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_56f40101d2720b2a4d8b45d6_1"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5714dbc024597771384a510d_1"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e5fad2720bc05b8b4567_1"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e554d2720bac5b8b456e_1"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e3c2d2720bac5b8b4567_1"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_55f2d3fd4bdc2d5f408b4567_1"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_1"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Elim_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "AnyPmc",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Elim_0_subcondition_0"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Lighthouse"
+                                        ],
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Elim_0_subcondition_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Elim_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Elimination",
+                        "value": "10",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "PMC_Hunt_5704e4dad2720bb55b8b4567_10 description",
+        "failMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_10 failMessageText",
+        "image": "/files/quest/icon/5a27cafa86f77424e20615d6.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "5704e4dad2720bb55b8b4567",
+        "name": "PMC_Hunt_5704e4dad2720bb55b8b4567_10 name",
+        "note": "PMC_Hunt_5704e4dad2720bb55b8b4567_10 note",
+        "restartable": false,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "2000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "30000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_10_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 30000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_10 startedMessageText",
+        "successMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_10 successMessageText",
+        "templateId": "PMC_Hunt_5704e4dad2720bb55b8b4567_10",
+        "traderId": "Warden_Temporal_Id",
+        "type": "Elimination",
+        "QuestName": "[War] PMC Hunt: Clear Lighthouse from 10 PMC(s)",
+        "acceptPlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_10 acceptPlayerMessage",
+        "changeQuestMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_10 changeQuestMessageText",
+        "completePlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_10 completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "PMC_Hunt_5704e4dad2720bb55b8b4567_20": {
+        "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Parent_Quest_6",
+                        "index": 6,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_56f40101d2720b2a4d8b45d6_5"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5714dbc024597771384a510d_5"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e5fad2720bc05b8b4567_5"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e554d2720bac5b8b456e_5"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e3c2d2720bac5b8b4567_5"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_55f2d3fd4bdc2d5f408b4567_5"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_5"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Elim_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "AnyPmc",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Elim_0_subcondition_0"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Lighthouse"
+                                        ],
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Elim_0_subcondition_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Elim_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Elimination",
+                        "value": "20",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "PMC_Hunt_5704e4dad2720bb55b8b4567_20 description",
+        "failMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_20 failMessageText",
+        "image": "/files/quest/icon/5a27cafa86f77424e20615d6.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "5704e4dad2720bb55b8b4567",
+        "name": "PMC_Hunt_5704e4dad2720bb55b8b4567_20 name",
+        "note": "PMC_Hunt_5704e4dad2720bb55b8b4567_20 note",
+        "restartable": false,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "4000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "60000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_20_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 60000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_20 startedMessageText",
+        "successMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_20 successMessageText",
+        "templateId": "PMC_Hunt_5704e4dad2720bb55b8b4567_20",
+        "traderId": "Warden_Temporal_Id",
+        "type": "Elimination",
+        "QuestName": "[War] PMC Hunt: Clear Lighthouse from 20 PMC(s)",
+        "acceptPlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_20 acceptPlayerMessage",
+        "changeQuestMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_20 changeQuestMessageText",
+        "completePlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_20 completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "PMC_Hunt_5704e4dad2720bb55b8b4567_35": {
+        "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Parent_Quest_6",
+                        "index": 6,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_56f40101d2720b2a4d8b45d6_10"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5714dbc024597771384a510d_10"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e5fad2720bc05b8b4567_10"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e554d2720bac5b8b456e_10"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e3c2d2720bac5b8b4567_10"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_55f2d3fd4bdc2d5f408b4567_10"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_10"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Elim_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "AnyPmc",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Elim_0_subcondition_0"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Lighthouse"
+                                        ],
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Elim_0_subcondition_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Elim_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Elimination",
+                        "value": "35",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "PMC_Hunt_5704e4dad2720bb55b8b4567_35 description",
+        "failMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_35 failMessageText",
+        "image": "/files/quest/icon/5a27cafa86f77424e20615d6.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "5704e4dad2720bb55b8b4567",
+        "name": "PMC_Hunt_5704e4dad2720bb55b8b4567_35 name",
+        "note": "PMC_Hunt_5704e4dad2720bb55b8b4567_35 note",
+        "restartable": false,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "7000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "105000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_35_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 105000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_35 startedMessageText",
+        "successMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_35 successMessageText",
+        "templateId": "PMC_Hunt_5704e4dad2720bb55b8b4567_35",
+        "traderId": "Warden_Temporal_Id",
+        "type": "Elimination",
+        "QuestName": "[War] PMC Hunt: Clear Lighthouse from 35 PMC(s)",
+        "acceptPlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_35 acceptPlayerMessage",
+        "changeQuestMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_35 changeQuestMessageText",
+        "completePlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_35 completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "PMC_Hunt_5704e4dad2720bb55b8b4567_50": {
+        "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Parent_Quest_6",
+                        "index": 6,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_56f40101d2720b2a4d8b45d6_20"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5714dbc024597771384a510d_20"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e5fad2720bc05b8b4567_20"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e554d2720bac5b8b456e_20"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e3c2d2720bac5b8b4567_20"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_55f2d3fd4bdc2d5f408b4567_20"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_20"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Elim_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "AnyPmc",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Elim_0_subcondition_0"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Lighthouse"
+                                        ],
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Elim_0_subcondition_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Elim_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Elimination",
+                        "value": "50",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "PMC_Hunt_5704e4dad2720bb55b8b4567_50 description",
+        "failMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_50 failMessageText",
+        "image": "/files/quest/icon/5a27cafa86f77424e20615d6.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "5704e4dad2720bb55b8b4567",
+        "name": "PMC_Hunt_5704e4dad2720bb55b8b4567_50 name",
+        "note": "PMC_Hunt_5704e4dad2720bb55b8b4567_50 note",
+        "restartable": false,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "10000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "150000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_50_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 150000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_50 startedMessageText",
+        "successMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_50 successMessageText",
+        "templateId": "PMC_Hunt_5704e4dad2720bb55b8b4567_50",
+        "traderId": "Warden_Temporal_Id",
+        "type": "Elimination",
+        "QuestName": "[War] PMC Hunt: Clear Lighthouse from 50 PMC(s)",
+        "acceptPlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_50 acceptPlayerMessage",
+        "changeQuestMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_50 changeQuestMessageText",
+        "completePlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_50 completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "PMC_Hunt_5704e4dad2720bb55b8b4567_75": {
+        "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Parent_Quest_6",
+                        "index": 6,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_56f40101d2720b2a4d8b45d6_35"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5714dbc024597771384a510d_35"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e5fad2720bc05b8b4567_35"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e554d2720bac5b8b456e_35"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e3c2d2720bac5b8b4567_35"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_55f2d3fd4bdc2d5f408b4567_35"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_35"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Elim_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "AnyPmc",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Elim_0_subcondition_0"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Lighthouse"
+                                        ],
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Elim_0_subcondition_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Elim_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Elimination",
+                        "value": "75",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "PMC_Hunt_5704e4dad2720bb55b8b4567_75 description",
+        "failMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_75 failMessageText",
+        "image": "/files/quest/icon/5a27cafa86f77424e20615d6.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "5704e4dad2720bb55b8b4567",
+        "name": "PMC_Hunt_5704e4dad2720bb55b8b4567_75 name",
+        "note": "PMC_Hunt_5704e4dad2720bb55b8b4567_75 note",
+        "restartable": false,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "15000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "225000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_75_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 225000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_75 startedMessageText",
+        "successMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_75 successMessageText",
+        "templateId": "PMC_Hunt_5704e4dad2720bb55b8b4567_75",
+        "traderId": "Warden_Temporal_Id",
+        "type": "Elimination",
+        "QuestName": "[War] PMC Hunt: Clear Lighthouse from 75 PMC(s)",
+        "acceptPlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_75 acceptPlayerMessage",
+        "changeQuestMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_75 changeQuestMessageText",
+        "completePlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_75 completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "PMC_Hunt_5704e4dad2720bb55b8b4567_100": {
+        "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Parent_Quest_6",
+                        "index": 6,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_56f40101d2720b2a4d8b45d6_50"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5714dbc024597771384a510d_50"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e5fad2720bc05b8b4567_50"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e554d2720bac5b8b456e_50"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e3c2d2720bac5b8b4567_50"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_55f2d3fd4bdc2d5f408b4567_50"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_50"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Elim_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "AnyPmc",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Elim_0_subcondition_0"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Lighthouse"
+                                        ],
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Elim_0_subcondition_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Elim_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Elimination",
+                        "value": "100",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "PMC_Hunt_5704e4dad2720bb55b8b4567_100 description",
+        "failMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_100 failMessageText",
+        "image": "/files/quest/icon/5a27cafa86f77424e20615d6.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "5704e4dad2720bb55b8b4567",
+        "name": "PMC_Hunt_5704e4dad2720bb55b8b4567_100 name",
+        "note": "PMC_Hunt_5704e4dad2720bb55b8b4567_100 note",
+        "restartable": false,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "20000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "300000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_100_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 300000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_100 startedMessageText",
+        "successMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_100 successMessageText",
+        "templateId": "PMC_Hunt_5704e4dad2720bb55b8b4567_100",
+        "traderId": "Warden_Temporal_Id",
+        "type": "Elimination",
+        "QuestName": "[War] PMC Hunt: Clear Lighthouse from 100 PMC(s)",
+        "acceptPlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_100 acceptPlayerMessage",
+        "changeQuestMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_100 changeQuestMessageText",
+        "completePlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_100 completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "PMC_Hunt_5704e4dad2720bb55b8b4567_250": {
+        "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Parent_Quest_6",
+                        "index": 6,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_56f40101d2720b2a4d8b45d6_75"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5714dbc024597771384a510d_75"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e5fad2720bc05b8b4567_75"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e554d2720bac5b8b456e_75"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e3c2d2720bac5b8b4567_75"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_55f2d3fd4bdc2d5f408b4567_75"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_75"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Elim_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "AnyPmc",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Elim_0_subcondition_0"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Lighthouse"
+                                        ],
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Elim_0_subcondition_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Elim_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Elimination",
+                        "value": "250",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "PMC_Hunt_5704e4dad2720bb55b8b4567_250 description",
+        "failMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_250 failMessageText",
+        "image": "/files/quest/icon/5a27cafa86f77424e20615d6.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "5704e4dad2720bb55b8b4567",
+        "name": "PMC_Hunt_5704e4dad2720bb55b8b4567_250 name",
+        "note": "PMC_Hunt_5704e4dad2720bb55b8b4567_250 note",
+        "restartable": false,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "50000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "750000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_250_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 750000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_250 startedMessageText",
+        "successMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_250 successMessageText",
+        "templateId": "PMC_Hunt_5704e4dad2720bb55b8b4567_250",
+        "traderId": "Warden_Temporal_Id",
+        "type": "Elimination",
+        "QuestName": "[War] PMC Hunt: Clear Lighthouse from 250 PMC(s)",
+        "acceptPlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_250 acceptPlayerMessage",
+        "changeQuestMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_250 changeQuestMessageText",
+        "completePlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_250 completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    },
+    "PMC_Hunt_5704e4dad2720bb55b8b4567_500": {
+        "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500",
+        "canShowNotificationsInGame": true,
+        "conditions": {
+            "AvailableForStart": [
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Parent_Quest_6",
+                        "index": 6,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_56f40101d2720b2a4d8b45d6_100"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Parent_Quest_7",
+                        "index": 7,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5714dbc024597771384a510d_100"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Parent_Quest_8",
+                        "index": 8,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e5fad2720bc05b8b4567_100"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Parent_Quest_9",
+                        "index": 9,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e554d2720bac5b8b456e_100"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Parent_Quest_10",
+                        "index": 10,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e3c2d2720bac5b8b4567_100"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Parent_Quest_11",
+                        "index": 11,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_55f2d3fd4bdc2d5f408b4567_100"
+                    },
+                    "dynamicLocale": false
+                },
+                {
+                    "_parent": "Quest",
+                    "_props": {
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Parent_Quest_12",
+                        "index": 12,
+                        "parentId": "",
+                        "status": [
+                            4
+                        ],
+                        "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_100"
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "AvailableForFinish": [
+                {
+                    "_parent": "CounterCreator",
+                    "_props": {
+                        "counter": {
+                            "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Elim_0_counter_0",
+                            "conditions": [
+                                {
+                                    "_parent": "Kills",
+                                    "_props": {
+                                        "target": "AnyPmc",
+                                        "compareMethod": ">=",
+                                        "value": "1",
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Elim_0_subcondition_0"
+                                    }
+                                },
+                                {
+                                    "_parent": "Location",
+                                    "_props": {
+                                        "target": [
+                                            "Lighthouse"
+                                        ],
+                                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Elim_0_subcondition_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "doNotResetIfCounterCompleted": false,
+                        "dynamicLocale": false,
+                        "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Elim_0",
+                        "index": 0,
+                        "oneSessionOnly": false,
+                        "parentId": "",
+                        "type": "Elimination",
+                        "value": "500",
+                        "visibilityConditions": []
+                    },
+                    "dynamicLocale": false
+                }
+            ],
+            "Fail": []
+        },
+        "description": "PMC_Hunt_5704e4dad2720bb55b8b4567_500 description",
+        "failMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_500 failMessageText",
+        "image": "/files/quest/icon/5a27cafa86f77424e20615d6.jpg",
+        "instantComplete": false,
+        "isKey": false,
+        "location": "5704e4dad2720bb55b8b4567",
+        "name": "PMC_Hunt_5704e4dad2720bb55b8b4567_500 name",
+        "note": "PMC_Hunt_5704e4dad2720bb55b8b4567_500 note",
+        "restartable": false,
+        "rewards": {
+            "Started": [],
+            "Success": [
+                {
+                    "value": "100000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_Experience_3",
+                    "type": "Experience",
+                    "index": 3
+                },
+                {
+                    "target": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_5449016a4bdc2d6f028b456f_4_id",
+                    "value": "1500000",
+                    "id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_5449016a4bdc2d6f028b456f_4",
+                    "type": "Item",
+                    "index": 4,
+                    "items": [
+                        {
+                            "_id": "PMC_Hunt_5704e4dad2720bb55b8b4567_500_5449016a4bdc2d6f028b456f_4_id",
+                            "_tpl": "5449016a4bdc2d6f028b456f",
+                            "upd": {
+                                "StackObjectsCount": 1500000
+                            }
+                        }
+                    ]
+                }
+            ],
+            "Fail": []
+        },
+        "secretQuest": false,
+        "startedMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_500 startedMessageText",
+        "successMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_500 successMessageText",
+        "templateId": "PMC_Hunt_5704e4dad2720bb55b8b4567_500",
+        "traderId": "Warden_Temporal_Id",
+        "type": "Elimination",
+        "QuestName": "[War] PMC Hunt: Clear Lighthouse from 500 PMC(s)",
+        "acceptPlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_500 acceptPlayerMessage",
+        "changeQuestMessageText": "PMC_Hunt_5704e4dad2720bb55b8b4567_500 changeQuestMessageText",
+        "completePlayerMessage": "PMC_Hunt_5704e4dad2720bb55b8b4567_500 completePlayerMessage",
+        "side": "Pmc",
+        "questStatus": {}
+    }
+}
