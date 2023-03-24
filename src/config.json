@@ -18,14 +18,5 @@
 		"Khokhol" 	: 40,
 		"LabRat" 	: 40,
 		"Warden" 	: 40
-	},
-
-	"TradersEnabled" : {
-		"Bashkir" 	: true,
-		"Colonel" 	: true,
-		"Elder" 	: true,
-		"Khokhol" 	: true,
-		"LabRat" 	: true,
-		"Warden" 	: true
 	}
 }

@@ -36,7 +36,7 @@ class QuestManiac implements IPreAkiLoadMod, IPostDBLoadMod
     private mod:    string;
     private logger: ILogger;
 
-    private enabledTraders: object = {};
+    //private enabledTraders: object = {};
 
     constructor() 
     {
@@ -48,12 +48,13 @@ class QuestManiac implements IPreAkiLoadMod, IPostDBLoadMod
         this.logger = container.resolve<ILogger>("WinstonLogger");
 
         //Populate enabledTraders object
+        /*
         for (const traderName in config.TradersEnabled)
         {
             const traderID: string = this.traderNamesToIDs[traderName];
 
             this.enabledTraders[traderID] = config.TradersEnabled[traderName];
-        }
+        }*/
 
         this.logger.debug(`[${this.mod}] Loading... `)
         this.registerProfileImage(container);
@@ -87,7 +88,7 @@ class QuestManiac implements IPreAkiLoadMod, IPostDBLoadMod
         for (const trader in aqmDb.traders)
         {
             //Skip adding the trader if they are disabled in config:
-            if (!this.enabledTraders[trader]) continue;
+            //if (!this.enabledTraders[trader]) continue;
 
             //Remove trader item requirements if configured
             const questAssort = config.AllTradesAvailableFromStart ? 
@@ -113,7 +114,7 @@ class QuestManiac implements IPreAkiLoadMod, IPostDBLoadMod
             for (const trader in aqmDb.QuestBundles[bundle]) 
             {
                 //Skip adding the quest bundle to the trader if they are disabled in config:
-                if (!this.enabledTraders[trader]) continue;
+                //if (!this.enabledTraders[trader]) continue;
 
                 //quests.json file reference
                 const questsFile = aqmDb.QuestBundles[bundle][trader].quests;
@@ -208,7 +209,7 @@ class QuestManiac implements IPreAkiLoadMod, IPostDBLoadMod
             for (const trader in aqmDb.QuestBundles[bundle])
             {
                 //Skip adding the trader if they are disabled in config:
-                if (!this.enabledTraders[trader]) continue;
+                //if (!this.enabledTraders[trader]) continue;
 
                 for (const locale in aqmDb.QuestBundles[bundle][trader].locales)
                 {
@@ -239,7 +240,7 @@ class QuestManiac implements IPreAkiLoadMod, IPostDBLoadMod
             for (const trader in aqmDb.locales_traders[locale]) 
             {
                 //Skip adding the trader if they are disabled in config:
-                if (!this.enabledTraders[trader]) continue;
+                //if (!this.enabledTraders[trader]) continue;
 
                 const traderLocale = aqmDb.locales_traders[locale][trader]
 
@@ -285,13 +286,22 @@ class QuestManiac implements IPreAkiLoadMod, IPostDBLoadMod
         if (config.OverrideTradersDiscounts == true) 
         {
             this.logger.info("[AQM] Overriding Trader Discounts")
+
+            database.traders[bashkirBaseJson._id].base.discount = config.TradersDiscounts.Bashkir
+            database.traders[colonelBaseJson._id].base.discount = config.TradersDiscounts.Colonel
+            database.traders[elderBaseJson._id].base.discount = config.TradersDiscounts.Elder
+            database.traders[khokholBaseJson._id].base.discount = config.TradersDiscounts.Khokhol
+            database.traders[labratBaseJson._id].base.discount = config.TradersDiscounts.LabRat
+            database.traders[wardenBaseJson._id].base.discount = config.TradersDiscounts.Warden 
             
+            /*
             if (this.enabledTraders["Bashkir_Temporal_Id"]) database.traders[bashkirBaseJson._id].base.discount = config.TradersDiscounts.Bashkir
             if (this.enabledTraders["Colonel_Temporal_Id"]) database.traders[colonelBaseJson._id].base.discount = config.TradersDiscounts.Colonel
             if (this.enabledTraders["Elder_Temporal_Id"]) database.traders[elderBaseJson._id].base.discount = config.TradersDiscounts.Elder
             if (this.enabledTraders["Khokhol_Temporal_Id"]) database.traders[khokholBaseJson._id].base.discount = config.TradersDiscounts.Khokhol
             if (this.enabledTraders["LabRat_Temporal_Id"]) database.traders[labratBaseJson._id].base.discount = config.TradersDiscounts.LabRat
-            if (this.enabledTraders["Warden_Temporal_Id"]) database.traders[wardenBaseJson._id].base.discount = config.TradersDiscounts.Warden        
+            if (this.enabledTraders["Warden_Temporal_Id"]) database.traders[wardenBaseJson._id].base.discount = config.TradersDiscounts.Warden
+            */      
         }
 
         //patch handover issues for 'HK MP5SD Upper receiver'
@@ -357,14 +367,22 @@ class QuestManiac implements IPreAkiLoadMod, IPostDBLoadMod
 
         // Register route pointing to the profile picture
         const imageRouter = container.resolve<ImageRouter>("ImageRouter")
+
+        imageRouter.addRoute(bashkirBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/Bashkir_Temporal_Id.png`)
+        imageRouter.addRoute(colonelBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/Colonel_Temporal_Id.png`)
+        imageRouter.addRoute(elderBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/Elder_Temporal_Id.png`)
+        imageRouter.addRoute(khokholBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/Khokhol_Temporal_Id.png`)
+        imageRouter.addRoute(labratBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/LabRat_Temporal_Id.png`)
+        imageRouter.addRoute(wardenBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/Warden_Temporal_Id.png`)
         
+        /*
         if (this.enabledTraders["Bashkir_Temporal_Id"]) imageRouter.addRoute(bashkirBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/Bashkir_Temporal_Id.png`)
         if (this.enabledTraders["Colonel_Temporal_Id"]) imageRouter.addRoute(colonelBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/Colonel_Temporal_Id.png`)
         if (this.enabledTraders["Elder_Temporal_Id"]) imageRouter.addRoute(elderBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/Elder_Temporal_Id.png`)
         if (this.enabledTraders["Khokhol_Temporal_Id"]) imageRouter.addRoute(khokholBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/Khokhol_Temporal_Id.png`)
         if (this.enabledTraders["LabRat_Temporal_Id"]) imageRouter.addRoute(labratBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/LabRat_Temporal_Id.png`)
         if (this.enabledTraders["Warden_Temporal_Id"]) imageRouter.addRoute(wardenBaseJson.avatar.replace(".jpg", ""), `${imageFilepath}/traders/Warden_Temporal_Id.png`)
-        
+        */
     }
 
     private setupTraderUpdateTime(container: DependencyContainer): void 
@@ -378,13 +396,22 @@ class QuestManiac implements IPreAkiLoadMod, IPostDBLoadMod
         const khokholRefreshConfig: UpdateTime = { traderId: khokholBaseJson._id, seconds: 3600 }
         const labratRefreshConfig: UpdateTime = { traderId: labratBaseJson._id, seconds: 3600 }
         const wardenRefreshConfig: UpdateTime = { traderId: wardenBaseJson._id, seconds: 3600 }
+
+        traderConfig.updateTime.push(bashkirRefreshConfig)
+        traderConfig.updateTime.push(colonelRefreshConfig)
+        traderConfig.updateTime.push(elderRefreshConfig)
+        traderConfig.updateTime.push(khokholRefreshConfig)
+        traderConfig.updateTime.push(labratRefreshConfig)
+        traderConfig.updateTime.push(wardenRefreshConfig)
         
+        /*
         if (this.enabledTraders["Bashkir_Temporal_Id"]) traderConfig.updateTime.push(bashkirRefreshConfig)
         if (this.enabledTraders["Colonel_Temporal_Id"]) traderConfig.updateTime.push(colonelRefreshConfig)
         if (this.enabledTraders["Elder_Temporal_Id"]) traderConfig.updateTime.push(elderRefreshConfig)
         if (this.enabledTraders["Khokhol_Temporal_Id"]) traderConfig.updateTime.push(khokholRefreshConfig)
         if (this.enabledTraders["LabRat_Temporal_Id"]) traderConfig.updateTime.push(labratRefreshConfig)
         if (this.enabledTraders["Warden_Temporal_Id"]) traderConfig.updateTime.push(wardenRefreshConfig)
+        */
     }
 
     private traderNamesToIDs = {
