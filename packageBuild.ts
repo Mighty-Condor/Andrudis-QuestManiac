@@ -41,7 +41,8 @@ const ignoreList = [
     "mod.code-workspace",
     "package-lock.json",
     "tsconfig.json",
-    ".vscode/"
+    ".vscode/",
+    ".gitattributes"
 ];
 const exclude = glob.sync(`{${ignoreList.join(",")}}`, { realpath: true, dot: true });
 

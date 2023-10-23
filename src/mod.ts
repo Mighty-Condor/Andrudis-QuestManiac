@@ -14,6 +14,7 @@ import { ITraderConfig, UpdateTime }    from "@spt-aki/models/spt/config/ITrader
 import { IRagfairConfig }               from "@spt-aki/models/spt/config/IRagfairConfig"
 import { HashUtil }                     from "@spt-aki/utils/HashUtil"
 import { ImporterUtil }                 from "@spt-aki/utils/ImporterUtil";
+import { Traders }                      from "@spt-aki/models/enums/Traders"
 
 import { IAQMDatabase }                 from "../types_aqm/aqm_types"
 
@@ -100,6 +101,8 @@ class QuestManiac implements IPreAkiLoadMod, IPostDBLoadMod
                 assort: aqmDb.traders[trader].assort,
                 questassort: questAssort
             };
+
+            Traders[trader] = trader;
 
             ragfairConfig.traders[trader] = true
         }

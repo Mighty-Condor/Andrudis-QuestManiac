@@ -1,10 +1,10 @@
 {
     "name": "Andrudis-QuestManiac",
     "author": "Andrudis",
-    "version": "2.3.3",
+    "version": "2.4.0",
     "license": "NCSA Open Source",
     "main": "src/mod.js",
-    "akiVersion": "3.5.3",
+    "akiVersion": "3.7.X",
     "UpdatedBy": "Laurent MEKKA, Mighty_Condor",
     "scripts": {
         "setup": "npm i",
